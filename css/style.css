@@ -1,6 +1,12 @@
 body {
   background-color: rgb(105, 59, 231);
 }
+h1{
+  font-size: 30px;
+  font-style: italic
+}
+
 p{
-  font:rgb(199, 241, 7);
+  color:rgb(199, 241, 7);
+  font-size: 20px;
 }
