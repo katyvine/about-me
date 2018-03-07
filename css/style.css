@@ -1,6 +1,9 @@
 body {
   background-color: rgb(105, 59, 231);
 }
+body *{
+  border: 1px dotted orange;
+}
 h1{
   font-size: 30px;
   font-style: italic
@@ -9,4 +12,19 @@ h1{
 p{
   color:rgb(199, 241, 7);
   font-size: 20px;
+}
+
+ul {
+  margin: 50px;
+  list-style: square;
+}
+
+ol {
+  margin: 50px;
+  list-style: decimal;
+}
+
+footer{
+  bottom: 0;
+  position: absolute;
 }

@@ -24,7 +24,7 @@ console.log('Favorite team is Seahawks?: ' + favoriteTeam);
 var beerChoice = prompt('I live in Ballard, is Stoup my favorite Ballard Brewery? (yes or no?)').toLowerCase();
 
 if (beerChoice === 'no'){
-  alert('Nailed it!I like Reuben\'s the best.');
+  alert('Nailed it! I like Reuben\'s the best.');
 } else {alert('Nope, I like Reuben\'s more.');
 }
 
