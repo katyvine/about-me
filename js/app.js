@@ -1,6 +1,6 @@
 'use strict';
 
-// IF ESLSE
+// IF ELSE
 
 var homeTown = prompt('Am I from Seattle? (yes or no?)').toLowerCase();
 
@@ -21,11 +21,11 @@ if (favoriteTeam === 'yes'){
 
 console.log('Favorite team is Seahawks?: ' + favoriteTeam);
 
-var beerChoice = prompt('I live in Ballard, is my favorite Ballard Brewery Stoup? (yes or no?)').toLowerCase();
+var beerChoice = prompt('I live in Ballard, is Stoup my favorite Ballard Brewery? (yes or no?)').toLowerCase();
 
 if (beerChoice === 'no'){
-  alert('Nailed it!I like Ruben\'s the best.');
-} else {alert('Nope, I like Ruben\'s more.');
+  alert('Nailed it!I like Reuben\'s the best.');
+} else {alert('Nope, I like Reuben\'s more.');
 }
 
 console.log('Do I like Stoup?: ' + beerChoice);
