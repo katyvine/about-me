@@ -53,15 +53,17 @@
 var countryGuessLeft = 4;
 
 while (countryGuessLeft > 0){
-  var countryGuess = prompt('I spent 17 months travelling, how many countries did I go to?').toLowerCase();
+  var countryGuess = prompt('I spent 17 months travelling, how many countries did I go to?');
+  console.log (countryGuess);
 
-  if (countryGuess === 29){
+  if (parseInt(countryGuess) === 29) {
     alert('You got it!! Wow!');
+    countryGuessLeft = 0;
     break;
-  } else if (countryGuess > 29) {
+  } else if (parseInt(countryGuess) > 29) {
     alert('I went to a lot, but not that many! Try again');
     countryGuessLeft --;
-  } else if (countryGuess < 29) {
+  } else if (parseInt(countryGuess) < 29) {
     alert ('That\'s quite a few, but I went to even more! Try again.');
     countryGuessLeft --;
   }
@@ -81,6 +83,7 @@ var foodGuessLeft = 6;
 
 while (foodGuessLeft > 0 ){
   var foodGuess = prompt('Can you guess what some of my favorite foods are?').toLowerCase();
+  console.log(foodGuessLeft, 'at top of while loop');
 
   for(var i = 0; i < favoriteFoodsArray.length; i++){
     console.log(foodGuess);
@@ -89,12 +92,11 @@ while (foodGuessLeft > 0 ){
       foodGuessLeft = 0;
       break;
     }
-    else {
-      foodGuessLeft--;
-         
-      if (foodGuessLeft === 0){
-        alert ('You are out of guesses sorry. My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!');
-      }
-    }
   }
+  foodGuessLeft--;
+
+  if (foodGuessLeft === 0){
+    alert ('You are out of guesses sorry. My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!');
+  }
+  console.log(foodGuessLeft, 'at bottom of while loop');
 }
