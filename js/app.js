@@ -126,32 +126,35 @@ function countryGuessFunction() {
 countryGuessFunction();
 
 //Question 7: Mulitple Correct Answers
+function favoriteFoodsFunction() {
+  var favoriteFoodsArray = ['chocolate', 'cheese', 'chocolate chip cookies', 'wine'];
 
-var favoriteFoodsArray = ['chocolate', 'cheese', 'chocolate chip cookies', 'wine'];
+  var foodGuessLeft = 6;
 
-var foodGuessLeft = 6;
+  while (foodGuessLeft > 0 ){
+    var foodGuess = prompt('Can you guess what some of my favorite foods are?').toLowerCase();
 
-while (foodGuessLeft > 0 ){
-  var foodGuess = prompt('Can you guess what some of my favorite foods are?').toLowerCase();
+    for(var i = 0; i < favoriteFoodsArray.length; i++){
+      console.log(foodGuess);
+      if(foodGuess === favoriteFoodsArray[i]) {
+        alert ('Yes! My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!)');
+        score ++;
+        console.log ('Q7 score:' + score);
+        foodGuessLeft = 0;
+        break;
+      }
+    }
 
-  for(var i = 0; i < favoriteFoodsArray.length; i++){
-    console.log(foodGuess);
-    if(foodGuess === favoriteFoodsArray[i]) {
-      alert ('Yes! My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!)');
-      score ++;
-      console.log ('Q7 score:' + score);
-      foodGuessLeft = 0;
-      break;
+    foodGuessLeft--;
+
+    //TODO: create alert with error message
+
+    if (foodGuessLeft === 0){
+      alert ('You are out of guesses sorry. My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!)');
     }
   }
-
-  foodGuessLeft--;
-
-  //TODO: create alert with error message
-
-  if (foodGuessLeft === 0){
-    alert ('You are out of guesses sorry. My favorites are: chocolate, cheese, chocolate chip cookies and wine (yes wine is a food!)');
-  }
 }
+
+favoriteFoodsFunction();
 
 alert (userName + ', I hope you enjoyed that. You answered ' + score + ' of 7 questions correctly. Please play again soon.');
