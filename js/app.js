@@ -29,7 +29,8 @@ if (petQuestion === 'no'){
   alert('Right, no pets. But I really want a dog.');
   score ++;
   console.log ('Q2 score:' + score);
-} else { alert('No, no pets. But someday I\'ll get a dog!');
+} else {
+  alert('No, no pets. But someday I\'ll get a dog!');
 }
 
 console.log('Do I have pets?: ' + petQuestion);
@@ -40,7 +41,8 @@ if (beerChoice === 'no'){
   alert('Nailed it! I like Reuben\'s the best.');
   score ++;
   console.log ('Q3 score:' + score);
-} else {alert('Nope, I like Reuben\'s more.');
+} else {
+  alert('Nope, I like Reuben\'s more.');
 }
 
 console.log('Do I like Stoup?: ' + beerChoice);
@@ -51,7 +53,8 @@ if (missingContinent === 'no'){
   alert('You got it! I have been there, but not to Asia or Antartica');
   score ++;
   console.log ('Q4 score:' + score);
-} else { alert('Try again, I haven\'t been to Asia or Antartica');
+} else {
+  alert('Try again, I haven\'t been to Asia or Antartica');
 }
 
 console.log('Have I been to Antartica?: ' + missingContinent);
@@ -62,12 +65,13 @@ if (schoolQuestion === 'yes'){
   alert('Go Dawgs!');
   score ++;
   console.log ('Q5 score:' + score);
-} else {alert('Nope, I did give all my money to the University of Washington. Woof!');
+} else {
+  alert('Nope, I did give all my money to the University of Washington. Woof!');
 }
 
 console.log('Did I go to UW?: ' + schoolQuestion);
 
-// //Question 6: Numeric Imput: I spent 17 months travelling, how many countries did i go to? 29
+// //Question 6: Numeric Imput
 
 var countryGuessLeft = 4;
 
@@ -95,8 +99,7 @@ while (countryGuessLeft > 0){
 }
 
 
-
-//Question 7: Mulitple Choice: Can you guess what some of my favorite foods are?
+//Question 7: Mulitple Correct Answers
 
 var favoriteFoodsArray = ['chocolate', 'cheese', 'chocolate chip cookies', 'wine'];
 
@@ -113,7 +116,8 @@ while (foodGuessLeft > 0 ){
       score ++;
       console.log ('Q7 score:' + score);
       foodGuessLeft = 0;
-      break;}
+      break;
+    }
   }
 
   foodGuessLeft--;
