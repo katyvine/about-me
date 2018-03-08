@@ -50,6 +50,26 @@
 
 // //Question 6: Numeric Imput: I spent 17 months travelling, how many countries did i go to? 29
 
+var countryGuessLeft = 4;
+
+while (countryGuessLeft > 0){
+  var countryGuess = prompt('I spent 17 months travelling, how many countries did I go to?').toLowerCase();
+
+  if (countryGuess === 29){
+    alert('You got it!! Wow!');
+    break;
+  } else if (countryGuess > 29) {
+    alert('I went to a lot, but not that many! Try again');
+    countryGuessLeft --;
+  } else if (countryGuess < 29) {
+    alert ('That\'s quite a few, but I went to even more! Try again.');
+    countryGuessLeft --;
+  }
+
+  if (countryGuessLeft === 0) {
+    alert('Sorry you ran out of guesses. I went to 29 countries!');
+  }
+}
 
 
 
