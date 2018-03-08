@@ -1,39 +1,47 @@
 'use strict';
 // Into
+function userNameFunction() {
+  var userName = prompt('Welcome! What is your name?');
+  console.log (userName);
 
-var userName = prompt('Welcome! What is your name?');
-console.log (userName);
+  alert('Hi '+ userName + '! Are you ready to play my guessing game? It\'s about me!');
+}
 
-alert('Hi '+ userName + '! Are you ready to play my guessing game? It\'s about me!');
+userNameFunction();
 
 // Setting Score Keeper
 var score = 0;
 
 // // Questions 1-5: Yes or No?
+function homeTownFunction() {
+  var homeTown = prompt('Am I from Seattle? (yes or no?)').toLowerCase();
 
-var homeTown = prompt('Am I from Seattle? (yes or no?)').toLowerCase();
-
-if (homeTown === 'yes'){
-  alert('Yes! You\'re right!');
-  score ++;
-  console.log ('Q1 score:' + score);
-} else {
-  alert('Nope! I\'m from Seattle, the best city to live in.');
+  if (homeTown === 'yes'){
+    alert('Yes! You\'re right!');
+    score ++;
+    console.log ('Q1 score:' + score);
+  } else {
+    alert('Nope! I\'m from Seattle, the best city to live in.');
+  }
+  console.log('Am I from Seattle?: ' + homeTown);
 }
 
-console.log('Am I from Seattle?: ' + homeTown);
+homeTownFunction();
 
-var petQuestion = prompt('Do I have any pets? (yes or no?)').toLowerCase();
+function petQuestion() {
+  var petQuestion = prompt('Do I have any pets? (yes or no?)').toLowerCase();
 
-if (petQuestion === 'no'){
-  alert('Right, no pets. But I really want a dog.');
-  score ++;
-  console.log ('Q2 score:' + score);
-} else {
-  alert('No, no pets. But someday I\'ll get a dog!');
+  if (petQuestion === 'no'){
+    alert('Right, no pets. But I really want a dog.');
+    score ++;
+    console.log ('Q2 score:' + score);
+  } else {
+    alert('No, no pets. But someday I\'ll get a dog!');
+  }
+  console.log('Do I have pets?: ' + petQuestion);
 }
 
-console.log('Do I have pets?: ' + petQuestion);
+petQuestion();
 
 var beerChoice = prompt('I live in Ballard, is Stoup my favorite Ballard Brewery? (yes or no?)').toLowerCase();
 
