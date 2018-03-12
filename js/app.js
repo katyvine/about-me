@@ -16,9 +16,20 @@ userNameFunction();
 // Setting Score Keeper
 var score = 0;
 
-// // Questions 1-5: Yes or No?
+// Questions 1-5: Yes or No?
+
+// Creating Array for question 1-5
+
+var questionsforquiz = [
+  'Am I from Seattle? (yes or no?)',
+  'Do I have any pets? (yes or no?)',
+  'I live in Ballard, is Stoup my favorite Ballard Brewery? (yes or no?)',
+  'I have been to 5 of 7 continents. Is Australia one that I am missing? (yes or no?)',
+  'Did I go to the University of Washington? (yes or no)'
+];
+
 function homeTownFunction() {
-  var homeTown = prompt('Am I from Seattle? (yes or no?)').toLowerCase();
+  var homeTown = prompt(questionsforquiz[0]).toLowerCase();
 
   if (homeTown === 'yes'){
     alert('Yes! You\'re right!');

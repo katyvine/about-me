@@ -1,10 +1,17 @@
 body {
-  background-color: rgb(105, 59, 231);
+  background-image: url('../photo.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body *{
   border: 1px dotted orange;
 
 }
+img {
+  width: 100%
+}
+
 h1{
   font-size: 30px;
   font-style: italic
