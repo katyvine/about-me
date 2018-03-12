@@ -1,42 +1,48 @@
 body {
-  background-image: url('../photo.jpg');
+  background-color: black;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body *{
-  border: 1px dotted orange;
+  margin: 5px 30px;
+  padding: auto;
 
 }
-img {
-  width: 100%
+
+h1 {
+  font-size: 40px;
+  color: cadetblue;
 }
 
-h1{
-  font-size: 30px;
+h2 {
+  font-size: 25px;
+  color: lightsteelblue;
   font-style: italic
 }
-h2 {
-  font-size: 50px;
-}
 
-p{
+p {
+
   color:rgb(199, 241, 7);
   font-size: 20px;
 }
 
-ul {
-  margin: 50px;
-  list-style: square;
+
+img {
+  width: 300px; 
+  margin: 10px;
 }
+
+ul {
+  margin: 20px;
+  list-style: square;
+  color: skyblue;
+}
+
 
 ol {
-  margin: 50px;
+  margin: 20px;
   list-style: decimal;
-}
-
-footer{
-  bottom: 0;
-  position: absolute;
-  margin: 15px;
+  color: skyblue;
 }
